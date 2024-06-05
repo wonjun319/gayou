@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+import requests as req
+
+def main_page(request):
+    return render(request, 'login/login.jsp')
+

@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-dwrni9^)8=2t3v@^43ql(4wtnz%03zchxvv1d(!efv5bner@dp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,10 +76,21 @@ WSGI_APPLICATION = "gayou.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gayou',
+        'USER': os.environ.get('MySQL_username', 'root'),
+        'PASSWORD': os.environ.get('MySQL_password', 'cwj6362'),
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
