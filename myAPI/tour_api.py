@@ -5,7 +5,7 @@ pageNo = 1
 # OS 구분 : IOS (아이폰), AND (안드로이드), WIN (윈도우폰), ETC(기타)
 MobileOS = 'ETC'
 MobileApp = 'GAYOU'
-serviceKey = 't73LIKbFt1hCBViupj7bDfzg6wpDFI%252F3OYYHT9jnKOOiwRVcR3IGLKh%252F55wC47sDwISMZ0ssmWDBPSjeu2NNQg%253D%253D'
+
 # 응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은XML)
 _type = 'json'
 
