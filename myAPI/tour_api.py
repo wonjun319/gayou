@@ -1,5 +1,6 @@
 import requests as req
 
+serviceKey = ''
 
 
 def deco(func):
