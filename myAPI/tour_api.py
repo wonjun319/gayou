@@ -1,6 +1,5 @@
 import requests as req
 
-serviceKey = 't73LIKbFt1hCBViupj7bDfzg6wpDFI%252F3OYYHT9jnKOOiwRVcR3IGLKh%252F55wC47sDwISMZ0ssmWDBPSjeu2NNQg%253D%253D'
 
 
 def deco(func):
